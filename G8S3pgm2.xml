@@ -1,0 +1,57 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="comment_comment" id="2" x="27" y="19">
+    <field name="TEXT">G8S3pgm2 - Compound Mathematical Operations</field>
+    <next>
+      <block type="oled_cleardisplay" id="11">
+        <next>
+          <block type="oled_setcursor" id="20" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="27">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="28">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawtext" id="37">
+                <field name="TEXT">4 + (3 * 2) = </field>
+                <next>
+                  <block type="oled_drawnumber" id="46" inline="true">
+                    <value name="NUMBER">
+                      <block type="math_arithmetic" id="53" inline="true">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="math_number" id="67">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_arithmetic" id="60" inline="true">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <block type="math_number" id="68">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="69">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
